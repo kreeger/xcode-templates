@@ -1,0 +1,43 @@
+{
+  "Kind": "Xcode.Xcode3.ProjectTemplateUnitKind",
+  "Identifier": "com.borealkiss.base",
+  "Targets": [
+    {
+      "Name": "___PACKAGENAME___",
+      "Configurations": {
+        "Debug": {},
+        "Release": {}
+      },
+      "SharedSettings": {
+        "ALWAYS_SEARCH_USER_PATHS": "NO",
+        "PRODUCT_NAME": "$(TARGET_NAME)"
+      }
+    }
+  ],
+  "Project": {
+    "SharedSettings": {
+      "GCC_WARN_ABOUT_RETURN_TYPE": "YES",
+      "GCC_C_LANGUAGE_STANDARD": "gnu99",
+      "GCC_WARN_UNUSED_VARIABLE": "YES"
+    },
+    "Configurations": {
+      "Debug": {
+        "GCC_OPTIMIZATION_LEVEL": "0",
+        "GCC_SYMBOLS_PRIVATE_EXTERN": "NO",
+        "GCC_PREPROCESSOR_DEFINITIONS": "DEBUG"
+      },
+      "Release": {}
+    }
+  },
+  "Options": [
+    {
+      "NotPersisted": true,
+      "Required": true,
+      "Type": "text",
+      "EmptyReplacement": "ProductName",
+      "Identifier": "productName",
+      "Description": "Your new product's name.",
+      "Name": "Product Name"
+    }
+  ]
+}
