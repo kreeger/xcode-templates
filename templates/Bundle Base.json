@@ -1,0 +1,33 @@
+{
+  "Targets": [
+    {
+      "SharedSettings": {
+        "GCC_PRECOMPILE_PREFIX_HEADER": "YES",
+        "INFOPLIST_FILE": "___PACKAGENAME___/Info.plist",
+        "GCC_PREFIX_HEADER": "___PACKAGENAME___/Prefix.pch"
+      }
+    }
+  ],
+  "Options": [
+    {
+      "Required": true,
+      "Type": "text",
+      "EmptyReplacement": "com.yourcompany",
+      "Identifier": "bundleIdentifierPrefix",
+      "Description": "Your company's bundle identifier prefix.",
+      "Name": "Company Identifier"
+    },
+    {
+      "Default": "___VARIABLE_bundleIdentifierPrefix:bundleIdentifier___.___VARIABLE_productName:RFC1034Identifier___",
+      "Type": "static",
+      "Name": "Bundle Identifier",
+      "Identifier": "bundleIdentifier",
+      "Description": "Your new product's bundle identifier."
+    }
+  ],
+  "Kind": "Xcode.Xcode3.ProjectTemplateUnitKind",
+  "Ancestors": [
+    "com.borealkiss.base"
+  ],
+  "Identifier": "com.borealkiss.bundleBase"
+}

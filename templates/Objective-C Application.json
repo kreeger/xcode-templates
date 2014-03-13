@@ -1,0 +1,35 @@
+{
+  "Targets": [
+    {
+      "SharedSettings": {
+        "WRAPPER_EXTENSION": "app"
+      },
+      "ProductType": "com.apple.product-type.application",
+      "BuildPhases": [
+        {
+          "Class": "Sources"
+        },
+        {
+          "Class": "Frameworks"
+        },
+        {
+          "Class": "Resources"
+        }
+      ],
+      "Configurations": {
+        "Debug": {
+          "GCC_DYNAMIC_NO_PIC": "NO",
+          "COPY_PHASE_STRIP": "NO"
+        },
+        "Release": {
+          "COPY_PHASE_STRIP": "YES"
+        }
+      }
+    }
+  ],
+  "Kind": "Xcode.Xcode3.ProjectTemplateUnitKind",
+  "Ancestors": [
+    "com.borealkiss.bundleBase"
+  ],
+  "Identifier": "com.borealkiss.objectiveCApplication"
+}
