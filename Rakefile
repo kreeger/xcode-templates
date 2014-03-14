@@ -8,10 +8,10 @@ LOGGER.level = Logger::INFO
 SOURCE = '_Templates'
 DESTINATION = "Kreeger's Templates"
 
-task default: :build
+task :default => :build
 
 desc 'Build out the templates directory so Xcode can use it.'
-task build: [:prepare, :compile, :move_supporting_files]
+task :build => [:prepare, :compile, :move_supporting_files]
 
 task :prepare do
   directory = File.expand_path(DESTINATION)
