@@ -18,5 +18,9 @@ $ rake
 
 Seriously, that's it. You'll need to have rake installed, but who doesn't?
 
+## Important things to note
+
+I'm still working on these, so until I remove this notice, you may not wanna use 'em.
+
 [twt]:      http://twitter.com/borealkiss
 [kiss]:     http://blog.boreal-kiss.net/2011/03/11/a-minimal-project-template-for-xcode-4/
