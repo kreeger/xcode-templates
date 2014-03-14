@@ -1,0 +1,35 @@
+{
+  "Targets": [
+    {
+      "SharedSettings": {
+        "INFOPLIST_FILE": "___PACKAGENAME___/___PACKAGENAME___-Info.plist",
+        "GCC_PRECOMPILE_PREFIX_HEADER": "YES",
+        "GCC_PREFIX_HEADER": "___PACKAGENAME___/___PACKAGENAME___-Prefix.pch"
+      }
+    }
+  ],
+  "Nodes": [
+    "___PACKAGENAME___-Info.plist:CFBundleIdentifier",
+    "en.lproj/InfoPlist.strings:Instructions"
+  ],
+  "Kind": "Xcode.Xcode3.ProjectTemplateUnitKind",
+  "Ancestors": [
+    "com.apple.dt.unit.base"
+  ],
+  "Definitions": {
+    "___PACKAGENAME___-Info.plist:CFBundleIdentifier": "<key>CFBundleIdentifier</key>\n<string>___VARIABLE_bundleIdentifierPrefix:bundleIdentifier___.${PRODUCT_NAME:rfc1034identifier}</string>\n",
+    "___PACKAGENAME___-Info.plist": {
+      "Beginning": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<!DOCTYPE plist PUBLIC \"-//Apple//DTD PLIST 1.0//EN\" \"http://www.apple.com/DTDs/PropertyList-1.0.dtd\">\n<plist version=\"1.0\">\n<dict>\n",
+      "Indent": 1,
+      "Group": "Supporting Files",
+      "SubstituteMacros": true,
+      "TargetIndices": [],
+      "End": "</dict>\n</plist>"
+    },
+    "en.lproj/InfoPlist.strings:Instructions": "/* Localized versions of Info.plist keys */\n",
+    "en.lproj/InfoPlist.strings": {
+      "Group": "Supporting Files"
+    }
+  },
+  "Identifier": "com.apple.dt.unit.bundleBase"
+}

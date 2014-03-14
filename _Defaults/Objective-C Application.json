@@ -1,0 +1,66 @@
+{
+  "Targets": [
+    {
+      "SharedSettings": {
+        "WRAPPER_EXTENSION": "app"
+      },
+      "ProductType": "com.apple.product-type.application",
+      "BuildPhases": [
+        {
+          "Class": "Sources"
+        },
+        {
+          "Class": "Frameworks"
+        },
+        {
+          "Class": "Resources"
+        }
+      ]
+    }
+  ],
+  "Nodes": [
+    "main.m:comments",
+    "main.m:import:importCocoa",
+    "___PACKAGENAME___-Info.plist:Basics",
+    "___PACKAGENAME___-Prefix.pch:Availability",
+    "___PACKAGENAME___-Prefix.pch:objC:importCocoa"
+  ],
+  "Kind": "Xcode.Xcode3.ProjectTemplateUnitKind",
+  "Ancestors": [
+    "com.apple.dt.unit.bundleBase"
+  ],
+  "Definitions": {
+    "main.m": {
+      "Group": "Supporting Files"
+    },
+    "main.m:main": {
+      "Beginning": "int main(int argc, const char * argv[])\n{",
+      "Indent": 1,
+      "End": "}"
+    },
+    "*:implementation:synthesize:*": "@synthesize ___*___;",
+    "*:init": {
+      "Beginning": "- (id)init\n{\n    self = [super init];\n    if (self) {",
+      "Indent": 2,
+      "End": "    }\n    return self;\n}\n"
+    },
+    "___PACKAGENAME___-Info.plist:Basics": "<key>CFBundleDevelopmentRegion</key>\n<string>en</string>\n<key>CFBundleExecutable</key>\n<string>${EXECUTABLE_NAME}</string>\n<key>CFBundleInfoDictionaryVersion</key>\n<string>6.0</string>\n<key>CFBundleName</key>\n<string>${PRODUCT_NAME}</string>\n<key>CFBundlePackageType</key>\n<string>APPL</string>\n<key>CFBundleSignature</key>\n<string>????</string>\n",
+    "*:methods": {
+      "End": "@end"
+    },
+    "*:class:*": "@class ___*___;\n",
+    "*:implementation:synthesize": {
+      "End": "\n"
+    },
+    "*:implementation:init": {
+      "Beginning": "- (id)init\n{\n    self = [super init];\n    if (self) {",
+      "Indent": 2,
+      "End": "    }\n    return self;\n}\n"
+    },
+    "*:implementation": {
+      "Beginning": "@implementation ___FILEBASENAME___\n",
+      "End": "@end"
+    }
+  },
+  "Identifier": "com.apple.dt.unit.objectiveCApplication"
+}

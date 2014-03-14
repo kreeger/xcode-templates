@@ -1,0 +1,27 @@
+{
+  "Project": {
+    "SharedSettings": {
+      "CLANG_ENABLE_MODULES": "YES",
+      "IPHONEOS_DEPLOYMENT_TARGET": "latest_iphoneos"
+    },
+    "Configurations": {
+      "Debug": {
+        "ONLY_ACTIVE_ARCH": "YES"
+      },
+      "Release": {
+        "VALIDATE_PRODUCT": "YES"
+      }
+    },
+    "SDK": "iphoneos"
+  },
+  "Platforms": [
+    "com.apple.platform.iphoneos"
+  ],
+  "Kind": "Xcode.Xcode3.ProjectTemplateUnitKind",
+  "Definitions": {
+    "___PACKAGENAME___-Info.plist:UISupportedInterfaceOrientations~iPhone": "<key>UISupportedInterfaceOrientations</key>\n<array>\n     <string>UIInterfaceOrientationPortrait</string>\n     <string>UIInterfaceOrientationLandscapeLeft</string>\n     <string>UIInterfaceOrientationLandscapeRight</string>\n</array>",
+    "___PACKAGENAME___-Info.plist:UISupportedInterfaceOrientations~iPad": "<key>UISupportedInterfaceOrientations~ipad</key>\n<array>\n\t<string>UIInterfaceOrientationPortrait</string>\n\t<string>UIInterfaceOrientationPortraitUpsideDown</string>\n\t<string>UIInterfaceOrientationLandscapeLeft</string>\n\t<string>UIInterfaceOrientationLandscapeRight</string>\n</array>",
+    "*:*:importCocoa": "@import UIKit;\n"
+  },
+  "Identifier": "com.apple.dt.unit.iPhoneBase"
+}

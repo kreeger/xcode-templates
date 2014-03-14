@@ -1,0 +1,13 @@
+{
+  "Options": [
+    {
+      "Placeholder": "XYZ",
+      "Type": "text",
+      "Name": "Class Prefix",
+      "Identifier": "classPrefix",
+      "Description": "The prefix to prepend to all created classes"
+    }
+  ],
+  "Kind": "Xcode.Xcode3.ProjectTemplateUnitKind",
+  "Identifier": "com.apple.dt.unit.prefixable"
+}

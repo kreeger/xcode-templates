@@ -1,4 +1,7 @@
 {
+  "Identifier": "gr.kree.objectiveCApplication",
+  "Kind": "Xcode.Xcode3.ProjectTemplateUnitKind",
+  "Ancestors": ["gr.kree.bundleBase"],
   "Targets": [
     {
       "SharedSettings": {
@@ -26,10 +29,5 @@
         }
       }
     }
-  ],
-  "Kind": "Xcode.Xcode3.ProjectTemplateUnitKind",
-  "Ancestors": [
-    "com.borealkiss.bundleBase"
-  ],
-  "Identifier": "com.borealkiss.objectiveCApplication"
+  ]
 }

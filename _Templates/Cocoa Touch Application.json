@@ -1,0 +1,38 @@
+{
+  "Identifier": "gr.kree.cocoaTouchApplication",
+  "Kind": "Xcode.Xcode3.ProjectTemplateUnitKind",
+  "Ancestors": ["gr.kree.objectiveCApplication", "gr.kree.iPhoneBase"],
+  "Project": {
+    "SharedSettings": {
+      "CODE_SIGN_IDENTITY[sdk=iphoneos*]": "iPhone Developer"
+    }
+  },
+  "Targets": [
+    {
+      "Frameworks": [
+        "UIKit",
+        "Foundation",
+        "CoreGraphics"
+      ],
+      "SharedSettings": {
+        "ASSETCATALOG_COMPILER_APPICON_NAME": "AppIcon",
+        "ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME": "LaunchImage"
+      }
+    }
+  ],
+  "Components": [
+    {
+      "Name": "Specs",
+      "Identifier": "com.apple.dt.unit.cocoaTouchApplicationUnitTestBundle"
+    }
+  ],
+  "Options": [
+    {
+      "Placeholder": "BDK",
+      "Type": "text",
+      "Name": "Class Prefix",
+      "Identifier": "classPrefix",
+      "Description": "The prefix to prepend to all created classes"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "Nodes": [
+    "___PACKAGENAME___-Prefix.pch:Availability:iPhoneAvailability:3"
+  ],
+  "Concrete": true,
+  "Kind": "Xcode.Xcode3.ProjectTemplateUnitKind",
+  "Ancestors": [
+    "com.apple.dt.unit.cocoaTouchApplication",
+    "com.apple.dt.unit.coreDataCocoaTouchApplication"
+  ],
+  "Definitions": {
+    "___VARIABLE_classPrefix:identifier___AppDelegate.m:applicationdidFinishLaunchingWithOptions": {
+      "Beginning": "- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions\n{\n    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];\n    // Override point for customization after application launch.\n    self.window.backgroundColor = [UIColor whiteColor];",
+      "Indent": 1,
+      "End": "    [self.window makeKeyAndVisible];\n    return YES;\n}\n"
+    }
+  },
+  "Identifier": "com.apple.dt.unit.emptyApplication",
+  "Description": "This template provides a starting point for any application. It provides just an application delegate and a window."
+}
