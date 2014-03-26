@@ -9,13 +9,8 @@ LOGGER.level = Logger::INFO
 # DESTINATION = "Kreeger's Templates"
 
 ROUTES = {
-  # '_Defaults' => 'Default Templates',
-  # '_Templates' => "Kreeger's Templates",
   '_File Templates' => "Kreeger's File Templates",
 }
-
-SOURCE = '_Defaults'
-DESTINATION = "Default Templates"
 
 task :default => :build
 
