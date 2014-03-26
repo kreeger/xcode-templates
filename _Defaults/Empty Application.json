@@ -5,8 +5,7 @@
   "Concrete": true,
   "Kind": "Xcode.Xcode3.ProjectTemplateUnitKind",
   "Ancestors": [
-    "com.apple.dt.unit.cocoaTouchApplication",
-    "com.apple.dt.unit.coreDataCocoaTouchApplication"
+    "gr.kree.default.cocoaTouchApplication"
   ],
   "Definitions": {
     "___VARIABLE_classPrefix:identifier___AppDelegate.m:applicationdidFinishLaunchingWithOptions": {
@@ -15,6 +14,6 @@
       "End": "    [self.window makeKeyAndVisible];\n    return YES;\n}\n"
     }
   },
-  "Identifier": "com.apple.dt.unit.emptyApplication",
+  "Identifier": "gr.kree.default.emptyApplication",
   "Description": "This template provides a starting point for any application. It provides just an application delegate and a window."
 }

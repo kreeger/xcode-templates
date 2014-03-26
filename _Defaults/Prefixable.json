@@ -9,5 +9,5 @@
     }
   ],
   "Kind": "Xcode.Xcode3.ProjectTemplateUnitKind",
-  "Identifier": "com.apple.dt.unit.prefixable"
+  "Identifier": "gr.kree.default.prefixable"
 }

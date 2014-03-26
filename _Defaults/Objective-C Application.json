@@ -21,13 +21,13 @@
   "Nodes": [
     "main.m:comments",
     "main.m:import:importCocoa",
-    "___PACKAGENAME___-Info.plist:Basics",
+    "Info.plist:Basics",
     "___PACKAGENAME___-Prefix.pch:Availability",
     "___PACKAGENAME___-Prefix.pch:objC:importCocoa"
   ],
   "Kind": "Xcode.Xcode3.ProjectTemplateUnitKind",
   "Ancestors": [
-    "com.apple.dt.unit.bundleBase"
+    "gr.kree.default.bundleBase"
   ],
   "Definitions": {
     "main.m": {
@@ -44,7 +44,7 @@
       "Indent": 2,
       "End": "    }\n    return self;\n}\n"
     },
-    "___PACKAGENAME___-Info.plist:Basics": "<key>CFBundleDevelopmentRegion</key>\n<string>en</string>\n<key>CFBundleExecutable</key>\n<string>${EXECUTABLE_NAME}</string>\n<key>CFBundleInfoDictionaryVersion</key>\n<string>6.0</string>\n<key>CFBundleName</key>\n<string>${PRODUCT_NAME}</string>\n<key>CFBundlePackageType</key>\n<string>APPL</string>\n<key>CFBundleSignature</key>\n<string>????</string>\n",
+    "Info.plist:Basics": "<key>CFBundleDevelopmentRegion</key>\n<string>en</string>\n<key>CFBundleExecutable</key>\n<string>${EXECUTABLE_NAME}</string>\n<key>CFBundleInfoDictionaryVersion</key>\n<string>6.0</string>\n<key>CFBundleName</key>\n<string>${PRODUCT_NAME}</string>\n<key>CFBundlePackageType</key>\n<string>APPL</string>\n<key>CFBundleSignature</key>\n<string>????</string>\n",
     "*:methods": {
       "End": "@end"
     },
@@ -62,5 +62,5 @@
       "End": "@end"
     }
   },
-  "Identifier": "com.apple.dt.unit.objectiveCApplication"
+  "Identifier": "gr.kree.default.objectiveCApplication"
 }

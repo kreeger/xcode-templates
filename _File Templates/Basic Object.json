@@ -1,0 +1,77 @@
+{
+  "AllowedTypes": ["public.objective-c-source"],
+  "DefaultCompletionName": "MyClass",
+  "Options": [
+    {
+      "NotPersisted": true,
+      "Required": true,
+      "Type": "text",
+      "Name": "Class",
+      "Identifier": "productName",
+      "Description": "The name of the class to create"
+    },
+    {
+      "Values": [
+        "NSObject",
+        "UIView",
+        "UIViewController",
+        "UITableViewController",
+        "UITableViewCell"
+      ],
+      "Required": "YES",
+      "Default": "NSObject",
+      "Suffixes": {
+        "UITableViewCell": "TableViewCell",
+        "UITableViewController": "TableViewController",
+        "UIViewController": "ViewController"
+      },
+      "FallbackHeader": "#import <UIKit/UIKit.h>",
+      "Type": "class",
+      "Name": "Subclass of",
+      "Identifier": "cocoaTouchSubclass",
+      "Description": "What class to subclass in the new file"
+    },
+    {
+      "NotPersisted": true,
+      "Default": "false",
+      "Type": "checkbox",
+      "Name": "Also create XIB file",
+      "Identifier": "XIB",
+      "Description": "Whether to create a XIB file with the same name",
+      "RequiredOptions": {
+        "cocoaTouchSubclass": [
+          "UIViewController",
+          "UITableViewController",
+          "UITableViewCell"
+        ]
+      }
+    },
+    {
+      "Values": [
+        "iPhone",
+        "iPad"
+      ],
+      "Default": "iPhone",
+      "Type": "popup",
+      "Name": "",
+      "Identifier": "deviceFamily",
+      "Description": "What device family to create the file for",
+      "RequiredOptions": {
+        "XIB": [
+          "true"
+        ],
+        "cocoaTouchSubclass": [
+          "UIViewController",
+          "UITableViewController",
+          "UITableViewCell"
+        ]
+      }
+    }
+  ],
+  "Platforms": ["com.apple.platform.iphoneos"],
+  "SortOrder": "1",
+  "MainTemplateFile": "___FILEBASENAME___.m",
+  "Kind": "Xcode.IDEKit.TextSubstitutionFileTemplateKind",
+  "Summary": "A basic Objective-C class file set for Cocoa / Cocoa Touch",
+  "Description": "A basic Objective-C class file set for Cocoa / Cocoa Touch."
+}

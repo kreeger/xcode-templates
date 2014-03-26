@@ -1,5 +1,5 @@
 {
-  "Identifier": "gr.kree.BasiciOSApplication",
+  "Identifier": "gr.kree.basiciOSApplication",
   "Description": "This template provides a starting point for any application.",
   "Concrete": true,
   "Kind": "Xcode.Xcode3.ProjectTemplateUnitKind",
@@ -8,8 +8,8 @@
     "Classes/Core/Info.plist",
     "Classes/Core/Prefix.pch",
     "Classes/Core/main.m",
-    "Classes/Core/AppDelegate/___VARIABLE_classPrefix:identifier___AppDelegate.h",
-    "Classes/Core/AppDelegate/___VARIABLE_classPrefix:identifier___AppDelegate.m",
+    "Classes/Core/AppDelegate/AppDelegate.h",
+    "Classes/Core/AppDelegate/AppDelegate.m",
     "Resources/Info.plist"
   ],
   "Targets": [
@@ -22,7 +22,7 @@
   ],
   "Definitions": {
     "Resources/Info.plist": {
-      "Group": "Supporting Files",
+      "Group": "Resources",
       "TargetIndices": [],
       "Path": "Resources/Info.plist"
     },
@@ -41,20 +41,20 @@
         ],
       "Path": "Classes/Core/main.m"
     },
-    "Classes/Core/___VARIABLE_classPrefix:identifier___AppDelegate.h": {
+    "Classes/Core/AppDelegate.h": {
       "Group": [
         "Classes",
         "Core"
       ],
       "TargetIndices": [],
-      "Path": "Classes/Core/___VARIABLE_classPrefix:identifier___AppDelegate.h"
+      "Path": "Classes/Core/AppDelegate.h"
     },
-    "Classes/Core/___VARIABLE_classPrefix:identifier___AppDelegate.m": {
+    "Classes/Core/AppDelegate.m": {
       "Group": [
         "Classes",
         "Core"
       ],
-      "Path": "Classes/Core/___VARIABLE_classPrefix:identifier___AppDelegate.m"
+      "Path": "Classes/Core/AppDelegate.m"
     }
   }
 }

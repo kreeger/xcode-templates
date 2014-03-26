@@ -84,7 +84,7 @@
   ],
   "Kind": "Xcode.Xcode3.ProjectTemplateUnitKind",
   "Definitions": {
-    "*:*:importFoundation": "#import <Foundation/Foundation.h>\n",
+    "*:*:importFoundation": "@import Foundation;\n",
     "___PACKAGENAME___-Prefix.pch": {
       "Beginning": "//\n//  Prefix header\n//\n//  The contents of this file are implicitly included at the beginning of every source file.\n//\n",
       "Group": "Supporting Files",
@@ -95,8 +95,8 @@
       "Indent": 1,
       "End": "#endif"
     },
-    "*:comments": "//\n//  ___FILENAME___\n//  ___PACKAGENAME___\n//\n//  Created by ___FULLUSERNAME___ on ___DATE___.\n//___COPYRIGHT___\n//\n",
+    "*:comments": "/*\n *  ___PACKAGENAME___ // ___FILENAME___\n *___COPYRIGHT___\n */\n",
     "*:import:*": "#import \"___*___\"\n"
   },
-  "Identifier": "com.apple.dt.unit.base"
+  "Identifier": "gr.kree.default.base"
 }

@@ -98,9 +98,9 @@
   ],
   "Kind": "Xcode.Xcode3.ProjectTemplateUnitKind",
   "Ancestors": [
-    "com.apple.dt.unit.objectiveCApplication",
-    "com.apple.dt.unit.iPhoneBase",
-    "com.apple.dt.unit.prefixable"
+    "gr.kree.default.objectiveCApplication",
+    "gr.kree.default.iPhoneBase",
+    "gr.kree.default.prefixable"
   ],
   "Definitions": {
     "*:implementation:viewDidLoad": {
@@ -177,8 +177,8 @@
   "Components": [
     {
       "Name": "___PACKAGENAME___Tests",
-      "Identifier": "com.apple.dt.unit.cocoaTouchApplicationUnitTestBundle"
+      "Identifier": "gr.kree.default.cocoaTouchApplicationUnitTestBundle"
     }
   ],
-  "Identifier": "com.apple.dt.unit.cocoaTouchApplication"
+  "Identifier": "gr.kree.default.cocoaTouchApplication"
 }

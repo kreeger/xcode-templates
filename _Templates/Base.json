@@ -59,29 +59,6 @@
       "Identifier": "productName",
       "Description": "Your new product's name.",
       "Name": "Product Name"
-    },
-    {
-      "Default": "___FULLUSERNAME___",
-      "Type": "text",
-      "Name": "Organization Name",
-      "Identifier": "organizationName",
-      "Description": "Your company's name"
-    },
-    {
-      "Required": true,
-      "Type": "text",
-      "Name": "Company Identifier",
-      "Identifier": "bundleIdentifierPrefix",
-      "Description": "Your company's bundle identifier prefix",
-      "EmptyReplacement": "com.yourcompany"
-    },
-    {
-      "NotPersisted": true,
-      "Default": "___VARIABLE_bundleIdentifierPrefix:bundleIdentifier___.___VARIABLE_productName:RFC1034Identifier___",
-      "Type": "static",
-      "Name": "Bundle Identifier",
-      "Identifier": "bundleIdentifier",
-      "Description": "Your new product's bundle identifier"
     }
   ],
   "Definitions": {

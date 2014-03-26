@@ -1,17 +1,17 @@
-//
-//  AppDelegate.h
-//  ___PROJECTNAME___
-//
-//  Created by ___FULLUSERNAME___ on ___DATE___.
-//  Copyright ___ORGANIZATIONNAME___ ___YEAR___. All rights reserved.
-//
+/*
+ *  ___PROJECTNAME___ // AppDelegate.h
+ * ___COPYRIGHT___
+ */
 
-#import <UIKit/UIKit.h>
+/**
+ The application delegate responsible for inbound and outbound communication between the app and the system. Also
+ responsible for managing the application's lifecycle.
+ */
+@interface AppDelegate : UIResponder <UIApplicationDelegate> {
 
-@interface AppDelegate : NSObject <UIApplicationDelegate> {
-    UIWindow *_window;
-}
+/**
+ The window in which the application is shown.
+ */
+@property (strong, nonatomic) UIWindow *window;
 
-@property (nonatomic, retain) UIWindow *window;
 @end
-

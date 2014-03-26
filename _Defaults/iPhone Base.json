@@ -23,5 +23,5 @@
     "___PACKAGENAME___-Info.plist:UISupportedInterfaceOrientations~iPad": "<key>UISupportedInterfaceOrientations~ipad</key>\n<array>\n\t<string>UIInterfaceOrientationPortrait</string>\n\t<string>UIInterfaceOrientationPortraitUpsideDown</string>\n\t<string>UIInterfaceOrientationLandscapeLeft</string>\n\t<string>UIInterfaceOrientationLandscapeRight</string>\n</array>",
     "*:*:importCocoa": "@import UIKit;\n"
   },
-  "Identifier": "com.apple.dt.unit.iPhoneBase"
+  "Identifier": "gr.kree.default.iPhoneBase"
 }

@@ -22,5 +22,60 @@ Seriously, that's it. You'll need to have rake installed, but who doesn't?
 
 I'm still working on these, so until I remove this notice, you may not wanna use 'em.
 
+## Template functionality
+
+### Base (gr.kree.default.base)
+
+- Sets lots of Clang/GCC build flags.
+- Defines some target information and stubs out Debug/Release configurations.
+- Defines base target as `___PACKAGENAME___`.
+- Defines the following setup options:
+    - product name
+    - organization name
+    - bundle prefix
+- Contains wildcard definitions:
+    - Foundation import (`*:*:importFoundation`)
+    - Comments string (`*:comments`)
+    - Import string (`*:import:*`)
+- Contains file definitions:
+    - Prefix.pch (file definition)
+    - Prefix.pch (ifdef OBJC definition)
+
+### Bundle base (gr.kree.default.bundleBase)
+
+- Defines target settings, like location of Info.plist file and prefix header
+- Contains file definitions:
+    - Info.plist file (file definition)
+    - Info.plist (bundle identifier definition)
+- Nodes:
+    - Info.plist (bundle identifier definition)
+
+### Objective-C application (gr.kree.default.objectiveCApplication)
+
+- Defines target settings, like the extension the project should have, the type, and its build phases.
+- Wildcard definitions:
+    - Property synthesis in implementation (`*:implementation:synthesize:*`)
+    - Init method appearance (`*:init`)
+- File definitions:
+    - main.m (file definition)
+    - Info.plist (`Basics`, basic Objective-C settings)
+- Nodes:
+    - main.m (`comments`, `import:importCocoa`)
+    - Info.plist (basic Objective-C settings)
+    - Prefix.pch (Availability snippet, objc:importCocoa)
+
+## Global Variables
+
+- `PACKAGENAME`: the human-readable name of your application/package.
+- `FILENAME`: the name of the file in the current context.
+- `COPYRIGHT`: the copyright string generated, if a company name is added.
+
+## Scoped variables
+
+These are always prefixed by `VARIABLE_`.
+
+- `bundleIdentifierPrefix:bundleIdentifier`: your company bundle identifier prefix.
+- `productName:RFC1034Identifier`: the final part of your bundle identifier.
+
 [twt]:      http://twitter.com/borealkiss
 [kiss]:     http://blog.boreal-kiss.net/2011/03/11/a-minimal-project-template-for-xcode-4/

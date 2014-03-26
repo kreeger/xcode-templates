@@ -1,43 +1,26 @@
-//
-//  AppDelegate.m
-//  ___PROJECTNAME___
-//
-//  Created by ___FULLUSERNAME___ on ___DATE___.
-//  Copyright ___ORGANIZATIONNAME___ ___YEAR___. All rights reserved.
-//
+/*
+ *  ___PROJECTNAME___ // AppDelegate.m
+ * ___COPYRIGHT___
+ */
 
 #import "AppDelegate.h"
 
 @implementation AppDelegate
-@synthesize window = _window;
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {    
-    _window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-	_window.backgroundColor = [UIColor whiteColor];
-	UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-	UIViewController *vc = [storyboard instantiateInitialViewController];
-	_window.rootViewController = vc;
-    [_window makeKeyAndVisible];
-	
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+	self.window.backgroundColor = [UIColor whiteColor];
+	UIViewController *vc = [UIViewController new];
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
+	self.window.rootViewController = nav;
+    [self.window makeKeyAndVisible];
 	return YES;
 }
 
-- (void)applicationWillTerminate:(UIApplication *) application{
-
-}
-
-- (void)applicationDidEnterBackground:(UIApplication *) application{
-
-}
-
-- (void)applicationDidBecomeActive:(UIApplication *) application{
-	
-}
-
-- (void)dealloc {
-	self.window = nil;
-    [super dealloc];
-}
-
+- (void)applicationWillResignActive:(UIApplication *)application { }
+- (void)applicationDidEnterBackground:(UIApplication *)application { }
+- (void)applicationWillEnterForeground:(UIApplication *)application { }
+- (void)applicationDidBecomeActive:(UIApplication *)application { }
+- (void)applicationWillTerminate:(UIApplication *)application { }
 
 @end
