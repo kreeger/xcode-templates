@@ -17,7 +17,8 @@
       "Type": "class",
       "Name": "Testing",
       "Identifier": "cocoaTouchTestedClass",
-      "Description": "What class to test in the new file"
+      "Description": "What class to test in the new file",
+      "Suffix": "Spec"
     }
   ],
   "Platforms": ["com.apple.platform.iphoneos"],
