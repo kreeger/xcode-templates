@@ -1,5 +1,6 @@
 require 'rake'
 require 'logger'
+require 'debugger'
 
 LOGGER = Logger.new(STDOUT)
 LOGGER.formatter = ->(s, d, p, m) { "#{s}: #{m}\n" }
@@ -29,10 +30,13 @@ task :compile do
   ROUTES.each do |source, dest|
     Dir[File.join(source, '*.json')].each do |file|
       basename = File.basename(file).gsub('.json', '.xctemplate')
-      dest = File.join(dest, basename, 'TemplateInfo.plist')
-      LOGGER.debug "Converting #{file} to #{basename}"
-      FileUtils.mkdir_p File.dirname("#{dest}")
-      command "plutil -convert xml1 \"#{file}\" -o \"#{dest}\""
+      plist = File.join(dest, basename, 'TemplateInfo.plist')
+      LOGGER.info "Converting #{file} to #{basename}"
+      unless Dir.exist?(File.dirname(plist))
+        LOGGER.info "Creating #{File.dirname(plist)}"
+        FileUtils.mkdir_p(File.dirname(plist))
+      end
+      command "plutil -convert xml1 \"#{file}\" -o \"#{plist}\""
     end
   end
 end

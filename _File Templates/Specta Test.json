@@ -1,0 +1,29 @@
+{
+  "AllowedTypes": ["public.objective-c-source"],
+  "DefaultCompletionName": "MyClass",
+  "Options": [
+    {
+      "NotPersisted": true,
+      "Required": true,
+      "Type": "text",
+      "Name": "Class",
+      "Identifier": "productName",
+      "Description": "The name of this test file."
+    },
+    {
+      "Required": "YES",
+      "Default": "NSObject",
+      "FallbackHeader": "#import <UIKit/UIKit.h>",
+      "Type": "class",
+      "Name": "Testing",
+      "Identifier": "cocoaTouchTestedClass",
+      "Description": "What class to test in the new file"
+    }
+  ],
+  "Platforms": ["com.apple.platform.iphoneos"],
+  "SortOrder": "1",
+  "MainTemplateFile": "___FILEBASENAME___.m",
+  "Kind": "Xcode.IDEKit.TextSubstitutionFileTemplateKind",
+  "Summary": "A Specta-based spec file for Cocoa Touch",
+  "Description": "A Specta-based spec file for Cocoa Touch."
+}
